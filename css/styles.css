@@ -2,7 +2,7 @@ body{
     margin: 0;
     background-image: url("/img/wp.jpg");
     background-size: 100%;
-    background-repeat: no-repeat;
+    background-repeat:repeat;
     background-color: #131414;
     
 }
@@ -50,6 +50,7 @@ a {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: bold;
     font-size: 3vh;
+    text-decoration: none;
     
 }
 
@@ -59,7 +60,7 @@ a {
 }
 
 .footer {
-  position: fixed;
+  
   left: 0;
   bottom: 0;
   width: 100%;
@@ -128,9 +129,6 @@ a {
     }
 }
 
-
-
-
 .sidebar {
   height: 100vh;
   width: 0;
@@ -168,6 +166,78 @@ a {
   font-size: 24px;
   color: #333333;
   cursor: pointer;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 75vw;
+  margin: 5vh auto 10vh;
+  gap: 50px;
+
+
+}
+.character {
+  position: relative;
+  margin: 10px;
+  text-align: center;
+}
+.character h3  {
+  margin: 0;
+  font-size: 1.75vw;
+  color: red;
+}
+.character p{
+  margin: 0;
+  font-size: 1.2vw;
+  color: red;
+}
+.character img {
+  height: 100%;
+  width: 100%;
+  object-fit: scale-down;
+  
+}
+
+.episode-list-container{
+  max-width: 800px;
+  margin: 5vw auto;
+  background-color: rgba(250, 0, 0, 0.15);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
+}
+
+.episode-list-container h1 {
+  text-align: center;
+  color: white;
+}
+
+.episode-list-container h2 {
+  margin-top: 20px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+  color: white;
+}
+
+.episode-list-container ul {
+  list-style: none;
+  padding-left: 0;
+  color: white;
+}
+
+.episode-list-container li {
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: white;
+}
+
+.episode-list-container li:before {
+  content: "• ";
+  color: #FF5733; /* Change the bullet point color */
+  font-weight: bold;
+  margin-right: 5px;
 }
 
 /* Media queries for responsiveness */
