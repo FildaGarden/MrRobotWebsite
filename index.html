@@ -9,63 +9,69 @@
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/side.css">
     <script src="https://kit.fontawesome.com/129e10219f.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300&display=swap" rel="stylesheet">
     <title>Mr. Robot</title>
 </head>
 <body>
     <!--Horizontal Navigation Bar-->
-    <div class="horizontalNavBar">
-        <div class="bars">
-            <a href="" class="fa-solid fa-bars fa-beat-fade"></a>
+    <header>
+        <div class="horizontalNavBar">
+            <div class="bars">
+                <a href="" class="fa-solid fa-bars fa-beat-fade"></a>
+            </div>
+            <div>
+                <a href="index.html" class="item">HOME</a>
+            </div>
+            <div>
+                <a href="html/characters.html" class="item">CHARACTERS</a>
+            </div>
+            <div>
+                <h1 class="mainTitle">MR ROBOT</h1>
+            </div>
+            <div>
+                <a href="html/episodes.html" class="item">EPISODES</a>
+            </div>
+            <div>
+                <a href="html/store.html" class="item">STORE</a>
+            </div>
         </div>
-        <div>
-            <a href="index.html" class="item">HOME</a>
-        </div>
-        <div>
-            <a href="html/characters.html" class="item">CHARACTERS</a>
-        </div>
-        <div>
-            <h1 class="mainTitle">MR ROBOT</h1>
-        </div>
-        <div>
-            <a href="html/episodes.html" class="item">EPISODES</a>
-        </div>
-        <div>
-            <a href="html/store.html" class="item">STORE</a>
-        </div>
-    </div>
-
+    </header>/
     <!--Slideshow-->
-    
-    <div class="container">
-        <div class="arrow arrow-left">
-            <button class="fa-solid fa-arrow-left"></button>
+    <main>
+        <div class="container">
+            <div class="arrow arrow-left">
+                <button class="fa-solid fa-arrow-left"></button>
+            </div>
+            <div class="image-container">
+                <img src="img/1.jfif" alt="MrRobot Image">
+            </div>
+            <div class="text-container">
+                <h1>Header</h1>
+                <p>Description</p>
+            </div>
+            <div class="arrow arrow-right"> 
+                <button class="fa-solid fa-arrow-right"></button>
+            </div>       
         </div>
-        <div class="image-container">
-            <img src="img/1.jfif" alt="">
+        <script src="js/slideshow.js"></script>
+        <!--Sidebar-->
+        <div class="sidebar">
+            <a href="html/sitemap.html">Site Map</a>
+            <a href="html/contact.html">Contacts</a>
         </div>
-        <div class="text-container">
-            <h1>New album dropped</h1>
-            <p>Looks really good you know, some stuff, blababl</p>
-        </div>
-        <div class="arrow arrow-right"> 
-            <button class="fa-solid fa-arrow-right"></button>
-        </div>       
-    </div>
-    <script src="js/slideshow.js"></script>
-
-    <div class="sidebar">
-        <a href="#">Link 1</a>
-        <a href="#">Link 2</a>
-        <a href="#">Link 3</a>
-        <!-- Add more links as needed -->
-    </div>
-    <script src="js/sidebar.js"></script>
-
-      <!--Footer will be here--> 
-    <div class="footer">
-        <!--Gonna need some changes-->
-        <p>Filip zaradník</p>
-    </div>
-
-</body> 
+        <script src="js/sidebar.js"></script>
+    </main>
+    <footer>    
+        <ul>
+            <!--Footer-->
+          <li><a href="https://www.facebook.com/WhoIsMrRobot" target="_blank" class="fa-brands fa-square-facebook fa-2xl"></a></li>
+          <li><a href="https://twitter.com/whoismrrobot" target="_blank" class="fa-brands fa-square-x-twitter fa-2xl"></a></li>
+          <li><a href="https://www.youtube.com/@MrRobot" target="_blank" class="fa-brands fa-youtube fa-2xl"></a></li>
+        </ul>
+        <p>&copy; 2023 Filip Zahradník. All rights reserved.</p>
+      </footer>
+</body>
 </html>

@@ -8,10 +8,12 @@
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="/css/styles.css">
     <script src="https://kit.fontawesome.com/129e10219f.js" crossorigin="anonymous"></script>
+    <script src="/js/popup.js"></script>
     <title>Mr. Robot</title>
 </head>
 <body>
-    <!--Horizontal Navigation Bar-->
+    <header>
+        <!--Horizontal Navigation Bar-->
     <div class="horizontalNavBar">
         <div class="bars">
             <a href="" class="fa-solid fa-bars fa-beat-fade"></a>
@@ -32,75 +34,78 @@
             <a href="store.html" class="item">STORE</a>
         </div>
     </div>
-
-
-    <div class="shop-container">
-        <div class="shop-item">
-            <img src="/img/merch/1.jpg" alt="Product 1">
-            <h2>Brown Mr. Robot T-Shirt</h2>
-            <p>Price: $10</p>
-            <button>Buy</button>
+    </header>
+    <main>
+        <!--Shop Content-->
+        <div class="shop-container">
+            <div class="shop-item">
+                <img src="/img/merch/1.jpg" alt="Brown Mr. Robot T-Shirt" onclick="openPopup('/img/merch/1.jpg')">
+                <h2>Brown Mr. Robot T-Shirt</h2>
+                <p>Price: 10 &euro;</p>
+                <a class="button-link" href="https://www.redbubble.com/i/t-shirt/Mr-Robot-Patch-by-marslegarde/21863655.9V5H1">Buy</a class="button-link">
+            </div>
+            <div class="shop-item">
+                <img src="/img/merch/5.jpg" alt="Elliot Alderson Figure" onclick="openPopup('/img/merch/5.jpg')" >
+                <h2>Elliot Alderson Figure</h2>
+                <p>Price: 50 &euro;</p>
+                <a class="button-link" href="https://www.zavvi.ie/merch-figures/mr-robot-elliot-alderson-pop-vinyl-figure/11438425.html">Buy</a class="button-link">
+            </div>
+            <div class="shop-item">
+                <img src="/img/merch/2.webp" alt="Fsociety Hoodie Navy Blue" onclick="openPopup('/img/merch/2.webp  ')">
+                <h2>Fsociety Hoodie Navy Blue</h2>
+                <p>Price: 20 &euro;</p>
+                <a class="button-link" href="https://www.redbubble.com/i/sweatshirt/FSociety-by-TheCommoner/23550081.LEP2X">Buy</a class="button-link">
+            </div>
+            <div class="shop-item">
+                <img src="/img/merch/3.webp" alt="Fsociety T-Shirt Black" onclick="openPopup('/img/merch/3.webp')">
+                <h2>Fsociety T-Shirt Black</h2>
+                <p>Price: 30 &euro;</p>
+                <a class="button-link" href="https://www.redbubble.com/i/t-shirt/FSociety-by-TheCommoner/23550081.IJ6L0">Buy</a class="button-link">
+            </div>
+            <div class="shop-item">
+                <img src="/img/merch/4.jpg" alt="Fsociety Tank Top Black" onclick="openPopup('/img/merch/4.jpg')">
+                <h2>Fsociety Tank Top Black</h2>
+                <p>Price: 40 &euro;</p>
+                <a class="button-link" href="https://www.redbubble.com/i/tank-top/F-society-Mr-Robot-by-ideando/23703735.B4HC7">Buy</a class="button-link">
+            </div>
+            <div class="shop-item">
+                <img src="/img/merch/6.jpg" alt="Fsociety Backpack" onclick="openPopup('/img/merch/6.jpg')">
+                <h2>Fsociety Backpack</h2>
+                <p>Price: 60 &euro;</p>
+                <a class="button-link" href="https://www.redbubble.com/i/backpack/Mr-Robot-Hoodie-Mr-Robot-Gift-Society-F-society-Mr-Robot-Mr-Robot-Merchandise-TV-Show-Amazon-Prime-Video-Mr-Robot-Fan-by-LiamJC/63052120.K1KHE">Buy</a class="button-link">
+            </div>
+            <div class="shop-item">
+                <img src="/img/merch/7.jpg" alt="Mr. Robot Patch" onclick="openPopup('/img/merch/7.jpg')">
+                <h2>Mr. Robot Patch</h2>
+                <p>Price: 60 &euro;</p>
+                <a class="button-link" href="https://www.redbubble.com/i/sticker/Mr-Robot-Patch-by-marslegarde/21863655.EJUG5">Buy</a class="button-link">
+            </div>
+            <div class="shop-item">
+                <img src="/img/merch/8.jpg" alt="Mr. Robot Mug" onclick="openPopup('/img/merch/8.jpg')">
+                <h2>Mr. Robot Mug</h2>
+                <p>Price: 60 &euro;</p>
+                <a class="button-link" href="https://www.redbubble.com/i/mug/Mr-Robot-by-GarfunkelArt/17306022.9Q0AD">Buy</a class="button-link">
+            </div>
+            
+            <div class="popup" id="myPopup">
+                <span class="close" onclick="closePopup()">&times;</span>
+                <img src="" alt="Enlarged image of item" class="popup-content" id="popupImage">
+            </div>
+            <!--Sidebar-->
+        <div class="sidebar">
+            <a href="/html/sitemap.html">Site Map</a>
+            <a href="/html/contact.html">Contacts</a>
         </div>
-        <div class="shop-item">
-            <img src="/img/merch/2.webp" alt="Product 2">
-            <h2>Fsociety Hoodie Navy Blue</h2>
-            <p>Price: $20</p>
-            <button>Buy</button>
-        </div>
-        <div class="shop-item">
-            <img src="/img/merch/3.webp" alt="Product 3">
-            <h2>Fsociety T-Shirt Black</h2>
-            <p>Price: $30</p>
-            <button>Buy</button>
-        </div>
-        <div class="shop-item">
-            <img src="/img/merch/4.jpg" alt="Product 4">
-            <h2>Fsociety Tank Top Black</h2>
-            <p>Price: $40</p>
-            <button>Buy</button>
-        </div>
-        <div class="shop-item">
-            <img src="/img/merch/5.jpg" alt="Product 5">
-            <h2>Elliot Alderson Figure</h2>
-            <p>Price: $50</p>
-            <button>Buy</button>
-        </div>
-        <div class="shop-item">
-            <img src="/img/merch/6.jpg" alt="Product 6">
-            <h2>Fsociety Backpack</h2>
-            <p>Price: $60</p>
-            <button>Buy</button>
-        </div>
-        <div class="shop-item">
-            <img src="/img/merch/7.jpg" alt="Product 6">
-            <h2>Mr. Robot Patch</h2>
-            <p>Price: $60</p>
-            <button>Buy</button>
-        </div>
-        <div class="shop-item">
-            <img src="/img/merch/8.jpg" alt="Product 6">
-            <h2>Mr. Robot Mug</h2>
-            <p>Price: $60</p>
-            <button>Buy</button>
-        </div>
-     
-
-
-
-
-    <div class="sidebar">
-        <a href="#">Link 1</a>
-        <a href="#">Link 2</a>
-        <a href="#">Link 3</a>
-        <!-- Add more links as needed -->
-    </div>
-    <script src="/js/sidebar.js"></script>
-
-      <!--Footer will be here--> 
-    <div class="footer">
-        <!--Gonna need some changes-->
-        <p>Filip zaradník</p>
-    </div>
-
+        <script src="/js/sidebar.js"></script>
+    </main>
+    <footer>
+        <ul>
+            <!--Footer-->
+            <li><a href="https://www.facebook.com/WhoIsMrRobot" target="_blank" class="fa-brands fa-square-facebook fa-2xl"></a></li>
+            <li><a href="https://twitter.com/whoismrrobot" target="_blank" class="fa-brands fa-square-x-twitter fa-2xl"></a></li>
+            <li><a href="https://www.youtube.com/@MrRobot" target="_blank" class="fa-brands fa-youtube fa-2xl"></a></li>
+          </ul>
+          <p>&copy; 2023 Filip Zahradník. All rights reserved.</p>
+    </footer>
 </body> 
 </html>
